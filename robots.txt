@@ -1,0 +1,45 @@
+# Final Strike Esports - Robots.txt
+# www.finalstrike.gg
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Disallow: /404.html
+
+# Sitemap Location
+Sitemap: https://prosense.fun/sitemap.xml
+
+# Crawl Delay (in seconds)
+Crawl-delay: 1
+
+# Specific Rules for Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social Media Bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block Bad Bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

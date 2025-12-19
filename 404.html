@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="404 - Page Not Found. The page you're looking for doesn't exist. Return to Final Strike Esports home page.">
+  <link rel="canonical" href="https://prosense.fun/404.html">
+  <title>404 - Page Not Found | Final Strike</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --cyan: #3af2ff;
+      --red: #ff345d;
+      --text-primary: #ffffff;
+      --text-muted: #a0a0a0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: #05070d;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      padding: 32px;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--cyan), #5af8ff);
+      color: #05070d;
+      border: none;
+      box-shadow: 0 4px 15px rgba(58, 242, 255, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(58, 242, 255, 0.6);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 2px solid var(--cyan);
+      color: var(--cyan);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(58, 242, 255, 0.1);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(58, 242, 255, 0.3);
+    }
+
+    .bg-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-gradient {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top, rgba(58, 242, 255, 0.15), transparent 50%),
+                  radial-gradient(ellipse at bottom right, rgba(255, 52, 93, 0.15), transparent 50%);
+    }
+
+    .bg-noise {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    }
+
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(58, 242, 255, 0.05) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(58, 242, 255, 0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    .error-container {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .error-content {
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      position: relative;
+      z-index: 11;
+    }
+
+    .error-code {
+      font-size: 180px;
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--cyan), var(--red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+      animation: glitch 2s infinite;
+      position: relative;
+    }
+
+    @keyframes glitch {
+      0%, 90%, 100% {
+        transform: translate(0);
+        text-shadow: none;
+      }
+      92% {
+        transform: translate(-2px, 2px);
+        text-shadow: 2px -2px var(--cyan), -2px 2px var(--red);
+      }
+      94% {
+        transform: translate(2px, -2px);
+        text-shadow: -2px 2px var(--cyan), 2px -2px var(--red);
+      }
+      96% {
+        transform: translate(-2px, -2px);
+        text-shadow: 2px 2px var(--cyan), -2px -2px var(--red);
+      }
+    }
+
+    .error-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    .error-message {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .error-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-icon {
+      font-size: 120px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 20px rgba(58, 242, 255, 0.5));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .error-links {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .error-link {
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .error-link:hover {
+      color: #5af8ff;
+      background: rgba(58, 242, 255, 0.1);
+      border-color: var(--cyan);
+      transform: translateX(5px);
+    }
+
+    .particle-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    @media (max-width: 640px) {
+      .error-code {
+        font-size: 120px;
+      }
+
+      .error-title {
+        font-size: 32px;
+      }
+
+      .error-message {
+        font-size: 16px;
+      }
+
+      .error-buttons {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-ghost {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-layer">
+    <div class="bg-gradient"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <canvas id="particles" class="particle-bg"></canvas>
+
+  <div class="error-container">
+    <div class="error-content glass">
+      <div class="error-icon">🎯</div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">TARGET NOT FOUND</h1>
+      <p class="error-message" id="errorMessage">
+        The page you're looking for has been eliminated from the battlefield. 
+        Our scouts couldn't locate this position in the strike zone.
+      </p>
+      <div class="error-buttons">
+        <a href="index.html" class="btn-primary">Return to Base</a>
+        <a href="index.html#contact" class="btn-ghost">Contact Command</a>
+      </div>
+      <div class="error-links">
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;">Quick Navigation:</p>
+        <a href="index.html#hero" class="error-link">→ Home</a>
+        <a href="index.html#roster" class="error-link">→ Team Roster</a>
+        <a href="index.html#achievements" class="error-link">→ Achievements</a>
+        <a href="index.html#contact" class="error-link">→ Contact Us</a>
+        <a href="index.html#owner" class="error-link">→ Team Owner</a>
+        <a href="index.html#terms" class="error-link">→ Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Check URL parameters and referrer for context
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const referrer = document.referrer;
+      const errorMessage = document.getElementById('errorMessage');
+      
+      // Detect why user is here
+      if (urlParams.get('from') === 'social') {
+        errorMessage.innerHTML = `
+          <strong>Social Media Link</strong><br>
+          This social media profile is coming soon! We're still setting up our presence. 
+          Follow us to get notified when we go live.
+        `;
+      } else if (urlParams.get('from') === 'external') {
+        errorMessage.innerHTML = `
+          <strong>External Link</strong><br>
+          This external resource is currently unavailable. 
+          Please check back later or contact us for more information.
+        `;
+      } else if (referrer && referrer.includes('index.html')) {
+        errorMessage.innerHTML = `
+          <strong>Feature Coming Soon</strong><br>
+          The feature you're trying to access is under development. 
+          Stay tuned for updates on our main page!
+        `;
+      }
+      
+      // Auto-redirect after 10 seconds
+      let countdown = 10;
+      const countdownMsg = document.createElement('p');
+      countdownMsg.style.cssText = 'color: var(--cyan); font-size: 14px; margin-top: 20px;';
+      countdownMsg.innerHTML = `Auto-redirecting to home in <span id="countdown">${countdown}</span> seconds...`;
+      errorMessage.parentElement.appendChild(countdownMsg);
+      
+      const countdownInterval = setInterval(() => {
+        countdown--;
+        const countdownSpan = document.getElementById('countdown');
+        if (countdownSpan) {
+          countdownSpan.textContent = countdown;
+        }
+        
+        if (countdown <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = 'index.html';
+        }
+      }, 1000);
+      
+      // Cancel auto-redirect if user interacts
+      document.querySelectorAll('a, button').forEach(element => {
+        element.addEventListener('click', () => {
+          clearInterval(countdownInterval);
+        });
+      });
+    });
+
+    // Particle system for 404 page
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const particles = [];
+    const particleCount = 50;
+    
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vx = (Math.random() - 0.5) * 0.5;
+        this.vy = (Math.random() - 0.5) * 0.5;
+        this.size = Math.random() * 2 + 1;
+        this.opacity = Math.random() * 0.5 + 0.2;
+      }
+      
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        
+        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+      }
+      
+      draw() {
+        ctx.fillStyle = `rgba(58, 242, 255, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+    
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      particles.forEach(particle => {
+        particle.update();
+        particle.draw();
+      });
+      
+      requestAnimationFrame(animate);
+    }
+    
+    animate();
+    
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+</html>
